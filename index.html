@@ -5,12 +5,21 @@
      <meta name="viewport" content="width=device-width, initial-scale=1" />
  
      <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" /> <!-- Additional CSS must be placed after Bootstrap CSS -->
+     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+     <link rel="stylesheet" href="/css/styles.css">
     <title> Welcome to testrate</title>
 </head>
 <body>
-    <h1> Welcome to testrate</h1>
     <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <img src="img/testrateDarkRedlogo.png" />
+                <img src="img/testrateDarkRedsmall.png" />
+                <i class="fa fa-plus fa-lg"></i>
+                <h1> Welcome to testrate</h1>
+            </div>
+        </div>
         <div class="row">
             <div class="col">Test 1</div>
             <div class="col">Test 2 </div>
@@ -23,5 +32,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 
 </footer>
