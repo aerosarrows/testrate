@@ -1,0 +1,24 @@
+{
+  "name": "testrate",
+  "version": "1.0.0",
+  "description": "Test and rate your favorite spots!",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aerosarrows/testrate.git"
+  },
+  "author": "Geoffrey Lisch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aerosarrows/testrate/issues"
+  },
+  "homepage": "https://github.com/aerosarrows/testrate#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
