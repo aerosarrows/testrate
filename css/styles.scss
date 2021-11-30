@@ -1,14 +1,117 @@
-$color-text-blue: #180a9b;
-$color-text-dark-red: #6b0707;
-$color-text-black: #000;
+$color-blue: #180a9b;
+$color-dark-red: #6a0320;
+$color-red:#800022;
+$color-black: #000;
+$color-dark-gray: #4b4b4b;
+$color-gray: #686868;
+$color-light-gray: #8d8d8d;
 
-h1 {
-    color:$color-text-black
+$font-main: 'Cabin';
+$font-logo: 'Audiowide';
+
+
+body {
+    font-family: $font-main, serif;
 }
 
-h2 {
-    color:$color-text-blue
+.fa {
+    color: $color-dark-red;
 }
 
+.row {
+    padding: 10px;
+}
 
-/* VanBerger font size 150 */
+.container-background {
+    height: 3rem;
+    margin-bottom: 0.5rem;
+    background-color: $color-dark-red;
+    border-radius: 0.25rem;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.footer {
+    position: fixed;
+    left:0;
+    bottom:0;
+    width: 100%;
+}
+
+.navbar {
+    background-color:$color-dark-gray;
+    font-size: 20px;
+    border-bottom: 10px solid $color-red
+}
+
+.navbar-brand {
+    font-family: $font-logo;
+    color: $color-light-gray;
+    -webkit-text-stroke: 1px $color-light-gray;
+    font-size: 28px;
+}
+
+.navbar-brand:hover {
+    font-family: $font-logo;
+    color: $color-light-gray;
+    -webkit-text-stroke: 1px $color-light-gray;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: $font-logo;
+    color: $color-dark-red;
+    font-size: 96px;
+}
+
+.logo-small {
+    font-family: $font-logo;
+    color: $color-dark-red;
+    font-size: 32px;
+}
+
+.logo-small:hover {
+    font-family: $font-logo;
+    color: $color-dark-red;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.logo:hover {
+    font-family: $font-logo;
+    color: $color-dark-red;
+    font-size: 96px;
+    text-decoration: none;
+}
+
+.search-click {
+    border: 1px solid #ccc;
+    outline: none;
+    background-size: 22px;
+    background-position: 13px;
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    padding: 25px;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+  }
+
+.search-click:focus {
+    width: 500px;
+    padding-left: 50px;
+}
+.search-click input {
+    background: transparent;
+    border: 1px solid #ccc;
+    outline: none;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: 0%;
+    padding: 10px;
+} 
