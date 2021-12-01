@@ -6,6 +6,7 @@ $color-dark-gray: #4b4b4b;
 $color-gray: #686868;
 $color-light-gray: #8d8d8d;
 $color-white: #fff;
+$color-fire: #d46401;
 
 $font-main: 'Cabin';
 $font-logo: 'Audiowide';
@@ -16,9 +17,14 @@ body {
     font-family: $font-main, serif;
 }
 
+.fa.fa-fire.fa-3x {
+    color: $color-fire;
+}
+
 .fa {
     color: $color-dark-red;
 }
+
 
 .row {
     padding: 10px;
@@ -193,7 +199,20 @@ body {
 }
 
 .pillcard {
-    border-top: 3px solid $color-dark-red; 
-    border-left: 3px solid $color-dark-red;
-    border-right: 3px solid $color-dark-red;
+    border-bottom: 3px solid $color-dark-red;
 }
+
+.map-container-2{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+
+.map-container-2 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }

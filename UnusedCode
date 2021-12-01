@@ -1,0 +1,87 @@
+<!-- Unused review page code -->
+<span class="d-md-none" id= "xsVP">
+    <div class="row">
+        <div class="col text-center">
+            <span class='logo-text' >
+                <span>test</span>
+                <i class="fa fa-arrow-right fa-sm"></i>
+                <strong class="underclass">rate</strong>
+            </span>
+        </div> 
+    </div>
+<div class="row d-flex justify-content-center">
+    <div class="col-8 d-flex justify-content-center">
+        <div class="card text-center d-none d-md-block shadow">
+            <div class="card-header">
+                <div class="col-lg-8 mx-auto">
+                    <ul class="nav nav-pills mb-3 pillcard" id="pills-tab" role="tablist">
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link active" id="pills-experience-tab" data-toggle="pill" href="#pills-experience" role="tab">Overall Experience</a>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" id="pills-product-tab" data-toggle="pill" href="#pills-product" role="tab">Product Quality</a>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" id="pills-service-tab" data-toggle="pill" href="#pills-service" role="tab">Service Quality</a>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" id="pills-cost-tab" data-toggle="pill" href="#pills-cost" role="tab">Cost</a>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" id="pills-final-tab" data-toggle="pill" href="#pills-final" role="tab">Final Review</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content d-none d-md-block shadow" id="pills-tabContent">
+            <div class="tab-pane fade show active text-center" id="pills-experience" role="tabpanel">
+                <div class="card-body">
+                    <h5 class="card-title">Overall Experience</h5>
+                    <p class="card-text">Please rate your overall experience:</p>
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <br>
+                    <br>
+                    <button id="overallBtn" class="btn btn-primary">Product Quality</button>
+                </div>
+            </div>
+            <div class="tab-pane fade text-center"  role="tabpanel" id="pills-product" >
+                <div class="card-body">
+                    <h5 class="card-title">Product Quality</h5>
+                    <p class="card-text">Please rate the product quality:</p>
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <br>
+                    <br>
+                    <button id="experienceBtn" class="btn btn-primary">Service Experience</button>
+                </div>
+            </div>
+            <div class="tab-pane fade text-center"  role="tabpanel" id="pills-service">
+                <div class="card-body">
+                    <h5 class="card-title">Service Experience</h5>
+                    <p class="card-text">Please rate your service experience:</p>
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <br>
+                    <br>
+                    <button id="serviceBtn" class="btn btn-primary">Cost</a>
+                </div>
+            </div>
+            <div class="tab-pane fade text-center" role="tabpanel" id="pills-cost">
+                <div class="card-body">
+                    <h5 class="card-title">Cost</h5>
+                    <p class="card-text">Please rate your overall cost:</p>
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <br>
+                    <br>
+                    <button id="costBtn" class="btn btn-primary">Finish!</a>
+                </div>
+            </div>
+            <div class="tab-pane fade text-center" role="tabpanel" id="pills-final">
+                <div class="card-body">
+                    <h5 class="card-title">Final</h5>
+                    <p class="card-text">Your final review:</p>
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>   
+    </div>
+</div>

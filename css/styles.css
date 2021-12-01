@@ -1,6 +1,9 @@
 body {
   font-family: "Cabin", serif; }
 
+.fa.fa-fire.fa-3x {
+  color: #d46401; }
+
 .fa {
   color: #6a0320; }
 
@@ -148,6 +151,17 @@ body {
   border: 3px solid #6a0320; }
 
 .pillcard {
-  border-top: 3px solid #6a0320;
-  border-left: 3px solid #6a0320;
-  border-right: 3px solid #6a0320; }
+  border-bottom: 3px solid #6a0320; }
+
+.map-container-2 {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0; }
+
+.map-container-2 iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
