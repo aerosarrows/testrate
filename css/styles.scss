@@ -5,9 +5,11 @@ $color-black: #000;
 $color-dark-gray: #4b4b4b;
 $color-gray: #686868;
 $color-light-gray: #8d8d8d;
+$color-white: #fff;
 
 $font-main: 'Cabin';
 $font-logo: 'Audiowide';
+$font-logo-text: 'Permanent Marker';
 
 
 body {
@@ -34,10 +36,11 @@ body {
 }
 
 .footer {
-    position: fixed;
+    position: relative;
     left:0;
     bottom:0;
     width: 100%;
+    padding-top: 100px ;
 }
 
 .navbar {
@@ -68,22 +71,41 @@ body {
 }
 
 .logo-small {
-    font-family: $font-logo;
+    font-family: $font-main;
     color: $color-dark-red;
-    font-size: 32px;
+    font-size: 18px;
 }
 
 .logo-small:hover {
+    font-family: $font-main;
+    color: $color-dark-red;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.logo-medium {
     font-family: $font-logo;
     color: $color-dark-red;
-    font-size: 32px;
-    text-decoration: none;
+    font-size: 54px;
 }
 
 .logo:hover {
     font-family: $font-logo;
     color: $color-dark-red;
     font-size: 96px;
+    text-decoration: none;
+}
+
+.logo-text {
+    font-family: $font-logo-text;
+    color: $color-dark-red;
+    font-size: 48px;
+}
+
+.logo-text:hover  {
+    font-family: $font-logo-text;
+    color: $color-dark-red;
+    font-size: 48px;
     text-decoration: none;
 }
 
@@ -110,8 +132,68 @@ body {
     border: 1px solid #ccc;
     outline: none;
     position: absolute;
-    width: 300px;
+    width: 200px;
     height: 50px;
     left: 0%;
     padding: 10px;
 } 
+
+.search-click-small {
+    border: 1px solid #ccc;
+    outline: none;
+    background-size: 22px;
+    background-position: 13px;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    padding: 25px;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+  }
+
+#submitBtn:hover {
+    .fa {
+        color: $color-white;
+    }
+    
+}
+
+.navactive {
+    display: inline-block;
+    border-bottom: 3px solid white;
+    padding-top: 1 px;
+
+}
+
+.navactive-small {
+    display: inline-block;
+    border-bottom: 5px solid white;
+    padding-top: 2 px;
+    width: 60px;
+
+}
+
+.footer ul > li {
+    display: inline-block;
+    zoom:1;
+    color: $color-dark-red;
+}
+
+.footer ul > li :hover {
+    text-decoration: none;
+}
+
+.underclass {
+    border-bottom: 5px solid $color-dark-red;
+}
+
+.tab-content {
+    border: 3px solid $color-dark-red; 
+}
+
+.pillcard {
+    border-top: 3px solid $color-dark-red; 
+    border-left: 3px solid $color-dark-red;
+    border-right: 3px solid $color-dark-red;
+}

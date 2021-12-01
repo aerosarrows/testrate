@@ -26,22 +26,22 @@
                     TR
                 </a>
                 <ul class="nav navbar-nav mt-2 mt-lg-0">
-                    <span class="navactive d-none d-md-block">
+                    <span class="d-none d-md-block">
                         <li class="nav-item active border-right">
                             <a class="nav-link text-light" href="main.html">home</a>
                         </li>
                     </span>
-                    <span class="navactive-small d-md-none">
+                    <span class="d-md-none">
                         <li class="nav-item active">
                             <a class="nav-link text-light" href="main.html">home</a>
                         </li>
                     </span>
-                    <span class="d-none d-md-block">
+                    <span class="navactive d-none d-md-block">
                         <li class="nav-item border-right">
                             <a class="nav-link text-light" href="review.html">review</a>
                         </li>
                     </span>
-                    <span class="d-md-none">
+                    <span class="navactive-small d-md-none">
                         <li class="nav-item">
                             <a class="nav-link text-light" href="review.html">review</a>
                         </li>
@@ -136,53 +136,92 @@
                     </span>
                 </div> 
             </div>
-            <div class="row" style="height:125px">
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <h2>what can we help you find?</h2>
+            <!-- <div class="row">
+                <div class="col">
+                    <ul style="list-style-type:none;">
+                        <li>1. Find place to review</li>
+                        <li>2. Review quality of product</li>
+                        <li>3. Review quality of service provided</li>
+                        <li>4. Review overall cost</li>
+                        <li>5. Review overall experience</li>
+                        <li>6. Final rating</li>
+                    </ul> -->
+                    
+            <div class="card text-center pillcard">
+                <div class="card-header">
+                    <div class="col-8 mx-auto">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item mx-auto">
+                                <a class="nav-link active" id="pills-experience-tab" data-toggle="pill" href="#pills-experience" role="tab">Overall Experience</a>
+                            </li>
+                            <li class="nav-item mx-auto">
+                                <a class="nav-link" id="pills-product-tab" data-toggle="pill" href="#pills-product" role="tab">Product Quality</a>
+                            </li>
+                            <li class="nav-item mx-auto">
+                                <a class="nav-link" id="pills-service-tab" data-toggle="pill" href="#pills-service" role="tab">Service Quality</a>
+                            </li>
+                            <li class="nav-item mx-auto">
+                                <a class="nav-link" id="pills-cost-tab" data-toggle="pill" href="#pills-cost" role="tab">Cost</a>
+                            </li>
+                            <li class="nav-item mx-auto">
+                                <a class="nav-link" id="pills-final-tab" data-toggle="pill" href="#pills-final" role="tab">Final Review</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <form class="form-inline mx-auto">
-                        <div class="input-group">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-secondary btn-lg" id="locBtn">location</button>
-                                <button type="button" class="btn btn-outline-secondary btn-lg dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-                                    <span class="sr-only">Toggle Dropdown</span>
-                                </button>
-                                <div class="dropdown-menu" id="locOptBtn">
-                                    <a class="dropdown-item" href="#">city, state</a>
-                                    <a class="dropdown-item" href="#">zip code</a>
-                                </div>
-                            </div>
-                            <input class="search-click" type="text" placeholder="ex. Denver, CO, 80210" id="locSearchBtn">
-                        </div>
-                    </form>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active text-center" id="pills-experience" role="tabpanel">
+                    <div class="card-body">
+                        <h5 class="card-title">Overall Experience</h5>
+                        <p class="card-text">Please rate your overall experience:</p>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        <br>
+                        <br>
+                        <button id="overallBtn" class="btn btn-primary">Product Quality</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade text-center"  role="tabpanel" id="pills-product" >
+                    <div class="card-body">
+                        <h5 class="card-title">Product Quality</h5>
+                        <p class="card-text">Please rate the product quality:</p>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        <br>
+                        <br>
+                        <button id="experienceBtn" class="btn btn-primary">Service Experience</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade text-center"  role="tabpanel" id="pills-service">
+                    <div class="card-body">
+                        <h5 class="card-title">Service Experience</h5>
+                        <p class="card-text">Please rate your service experience:</p>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        <br>
+                        <br>
+                        <button id="serviceBtn" class="btn btn-primary">Cost</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade text-center" role="tabpanel" id="pills-cost">
+                    <div class="card-body">
+                        <h5 class="card-title">Cost</h5>
+                        <p class="card-text">Please rate your overall cost:</p>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        <br>
+                        <br>
+                        <button id="costBtn" class="btn btn-primary">Finish!</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade text-center" role="tabpanel" id="pills-final">
+                    <div class="card-body">
+                        <h5 class="card-title">Final</h5>
+                        <p class="card-text">Your final review:</p>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <form class="form-inline mx-auto">
-                        <div class="input-group">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-secondary btn-lg" id="catBtn">category</button>
-                                <button type="button" class="btn btn-outline-secondary btn-lg dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-                                    <span class="sr-only">Toggle Dropdown</span>
-                                </button>
-                                <div class="dropdown-menu" id="optBtn">
-                                    <a class="dropdown-item" href="#">restaurants</a>
-                                    <a class="dropdown-item" href="#">retailers</a>
-                                    <a class="dropdown-item" href="#">services</a>
-                                <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">i'm not sure</a>
-                                </div>
-                            </div>
-                            <input class="search-click" type="text" placeholder="ex. Italian, Plumber, Macy's" id="searchBtn">
-                            <button class="btn btn-outline-primary btn-lg my-2 my-sm-0" type="submit" id="submitBtn">
-                                <i class="fa fa-search fa-flip-horizontal"></i>
-                            </button>
-                        </div>
-                    </form>
+                    
+                    
+                   
                 </div>
             </div>
         </span>
@@ -197,55 +236,6 @@
                     </span>
                 </div> 
             </div>
-            <div class="row" style="height:125px">
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <h2>what can we help you find? small</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 d-flex text-left">
-                    <form class="form-inline">
-                        <div class="input-group">
-                            <div class="btn-group mr-0">
-                                <button type="button" class="btn btn-secondary btn-lg" id="locBtn2">location</button>
-                                <button type="button" class="btn btn-outline-secondary btn-lg dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-                                    <span class="sr-only">Toggle Location Dropdown</span>
-                                </button>
-                                <div class="dropdown-menu" id="locOptBtn2">
-                                    <a class="dropdown-item" href="#">city, state</a>
-                                    <a class="dropdown-item" href="#">zip code</a>
-                                </div>
-                            </div>
-                            <input class="search-click-small" type="text" placeholder="ex. Denver, CO, 80210" id="locSearchBtn2">
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 d-flex text-left">
-                    <form class="form-inline">
-                        <div class="input-group">
-                            <div class="btn-group mr-0">
-                                <button type="button" class="btn btn-secondary btn-lg" id="catBtn2">category</button>
-                                <button type="button" class="btn btn-outline-secondary btn-lg dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-                                    <span class="sr-only">Toggle Category Dropdown</span>
-                                </button>
-                                <div class="dropdown-menu" id="optBtn2">
-                                    <a class="dropdown-item" href="#">restaurants</a>
-                                    <a class="dropdown-item" href="#">retailers</a>
-                                    <a class="dropdown-item" href="#">services</a>
-                                <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">i'm not sure</a>
-                                </div>
-                            </div>
-                            <input class="search-click-small" type="text" placeholder="ex. Italian, Plumber, Macy's" id="searchBtn2">
-                        </div>
-                        <button class="btn btn-outline-primary btn-lg my-2 my-sm-0 align-items-center mx-auto" type="submit" id="submitBtn">
-                            <i class="fa fa-search fa-flip-horizontal"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
         </span>
     </div>
 
@@ -258,12 +248,12 @@
             <div class="col d-flex align-items-center">
                 <ul style="list-style-type:none;">
                     <li>
-                        <a href="#" class="logo-small">
+                        <a href="main.html" class="logo-small">
                         home
                         </a>
                     </li>
                     <li>
-                        <a href="review.html" class="logo-small">
+                        <a href="#" class="logo-small">
                         review
                         </a>
                     </li>
@@ -301,11 +291,10 @@
             </div>
         </div>
     </div>
-    <!-- build:js js/main.js -->
+     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts-review.js"></script>
     <!-- endbuild -->
-
 </footer>

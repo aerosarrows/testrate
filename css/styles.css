@@ -17,10 +17,11 @@ body {
   padding: 30px; }
 
 .footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  padding-top: 100px; }
 
 .navbar {
   background-color: #4b4b4b;
@@ -46,20 +47,36 @@ body {
   font-size: 96px; }
 
 .logo-small {
-  font-family: "Audiowide";
+  font-family: "Cabin";
   color: #6a0320;
-  font-size: 32px; }
+  font-size: 18px; }
 
 .logo-small:hover {
+  font-family: "Cabin";
+  color: #6a0320;
+  font-size: 18px;
+  text-decoration: none; }
+
+.logo-medium {
   font-family: "Audiowide";
   color: #6a0320;
-  font-size: 32px;
-  text-decoration: none; }
+  font-size: 54px; }
 
 .logo:hover {
   font-family: "Audiowide";
   color: #6a0320;
   font-size: 96px;
+  text-decoration: none; }
+
+.logo-text {
+  font-family: "Permanent Marker";
+  color: #6a0320;
+  font-size: 48px; }
+
+.logo-text:hover {
+  font-family: "Permanent Marker";
+  color: #6a0320;
+  font-size: 48px;
   text-decoration: none; }
 
 .search-click {
@@ -84,7 +101,53 @@ body {
   border: 1px solid #ccc;
   outline: none;
   position: absolute;
-  width: 300px;
+  width: 200px;
   height: 50px;
   left: 0%;
   padding: 10px; }
+
+.search-click-small {
+  border: 1px solid #ccc;
+  outline: none;
+  background-size: 22px;
+  background-position: 13px;
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+  padding: 25px;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden; }
+
+#submitBtn:hover .fa {
+  color: #fff; }
+
+.navactive {
+  display: inline-block;
+  border-bottom: 3px solid white;
+  padding-top: 1 px; }
+
+.navactive-small {
+  display: inline-block;
+  border-bottom: 5px solid white;
+  padding-top: 2 px;
+  width: 60px; }
+
+.footer ul > li {
+  display: inline-block;
+  zoom: 1;
+  color: #6a0320; }
+
+.footer ul > li :hover {
+  text-decoration: none; }
+
+.underclass {
+  border-bottom: 5px solid #6a0320; }
+
+.tab-content {
+  border: 3px solid #6a0320; }
+
+.pillcard {
+  border-top: 3px solid #6a0320;
+  border-left: 3px solid #6a0320;
+  border-right: 3px solid #6a0320; }
