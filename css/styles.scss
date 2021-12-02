@@ -17,7 +17,7 @@ body {
     font-family: $font-main, serif;
 }
 
-.fa.fa-fire.fa-3x {
+.fa.fa-fire {
     color: $color-fire;
 }
 
@@ -93,6 +93,13 @@ body {
     font-family: $font-logo;
     color: $color-dark-red;
     font-size: 54px;
+}
+
+.logo-medium:hover {
+    font-family: $font-logo;
+    color: $color-dark-red;
+    font-size: 54px;
+    text-decoration: none;
 }
 
 .logo:hover {
@@ -216,3 +223,17 @@ body {
     width:100%;
     position:absolute;
     }
+
+.nav-pills {
+    .nav-link.active {
+    background-color: $color-dark-red;
+    }
+}
+
+.filterbutton {
+    background-color: $color-dark-red;
+}
+
+.list-group-item {
+    padding: 5px 10px
+}

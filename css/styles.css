@@ -1,7 +1,7 @@
 body {
   font-family: "Cabin", serif; }
 
-.fa.fa-fire.fa-3x {
+.fa.fa-fire {
   color: #d46401; }
 
 .fa {
@@ -64,6 +64,12 @@ body {
   font-family: "Audiowide";
   color: #6a0320;
   font-size: 54px; }
+
+.logo-medium:hover {
+  font-family: "Audiowide";
+  color: #6a0320;
+  font-size: 54px;
+  text-decoration: none; }
 
 .logo:hover {
   font-family: "Audiowide";
@@ -165,3 +171,12 @@ body {
   height: 100%;
   width: 100%;
   position: absolute; }
+
+.nav-pills .nav-link.active {
+  background-color: #6a0320; }
+
+.filterbutton {
+  background-color: #6a0320; }
+
+.list-group-item {
+  padding: 5px 10px; }
