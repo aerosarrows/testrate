@@ -125,128 +125,51 @@
         </div>
     </div>
     
+
+        
     <div class="container">
-        <span id="xsUp" class="d-none d-sm-block">
-            <div class="row">
-                <div class="col text-center">
-                    <span class='logo-text' >
-                        <span>test</span>
-                        <i class="fa fa-arrow-right fa-sm"></i>
-                        <strong class="underclass">rate</strong>
-                    </span>
-                </div> 
+        <div class="row">
+            <div class="col text-center">
+                <ol class="breadcrumb indigo lighten-6 first shadow-lg px-md-4">
+                    <li class="breadcrumb-item"><a href="main.html" class="text-muted"><i class="fa fa-home"></i> </a></li>
+                    <li class="breadcrumb-item active text-dark">about us</li>
+                </ol>
+                <span class='logo-text' >
+                    <span>test</span>
+                    <i class="fa fa-arrow-right fa-sm"></i>
+                    <strong class="underclass">rate</strong>
+                </span>
             </div>
-            <div class="row" style="height:125px">
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <h2>what can we help you find?</h2>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                testrate is a locally owned business located in Arvada, Colorado attempting to change the way we review businesses and services.  By offering more ratings we can give a better picture to users to help them truly find what they are looking for.
             </div>
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <form class="form-inline mx-auto">
-                        <div class="input-group">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-secondary btn-lg" id="locBtn">location</button>
-                                <button type="button" class="btn btn-outline-secondary btn-lg dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-                                    <span class="sr-only">Toggle Dropdown</span>
-                                </button>
-                                <div class="dropdown-menu" id="locOptBtn">
-                                    <a class="dropdown-item" href="#">city, state</a>
-                                    <a class="dropdown-item" href="#">zip code</a>
-                                </div>
-                            </div>
-                            <input class="search-click" type="text" placeholder="ex. Denver, CO, 80210" id="locSearchBtn">
+        </div>
+        <br>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 order-lg-first">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label for="fullName">full name</label>
+                            <input type="text" class="form-control" placeholder="full fame (ex. John Smith)" id="fullName">
+                        </div>  
+                        <div class="form-group col-12">
+                                <label for="email">e-mail</label>
+                                <input type="email" class="form-control" placeholder="john@smith.com" id="email">
                         </div>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <form class="form-inline mx-auto">
-                        <div class="input-group">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-secondary btn-lg" id="catBtn">category</button>
-                                <button type="button" class="btn btn-outline-secondary btn-lg dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-                                    <span class="sr-only">Toggle Dropdown</span>
-                                </button>
-                                <div class="dropdown-menu" id="optBtn">
-                                    <a class="dropdown-item" href="#">restaurants</a>
-                                    <a class="dropdown-item" href="#">retailers</a>
-                                    <a class="dropdown-item" href="#">services</a>
-                                <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">i'm not sure</a>
-                                </div>
-                            </div>
-                            <input class="search-click" type="text" placeholder="ex. Italian, Plumber, Macy's" id="searchBtn">
-                            <button class="btn btn-outline-primary btn-lg my-2 my-sm-0" type="submit" id="submitBtn">
-                                <i class="fa fa-search fa-flip-horizontal"></i>
-                            </button>
+                        <div class="form-group col-12">
+                                <label for="bodycontent">comments</label>
+                                <textarea type="text box" rows= 5 class="form-control" placeholder="let us know how we're doing!" id="bodycontent"></textarea>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                        <button type="submit" class="btn btn-primary btn-sm ml-auto">send</button>
+                        <button type="reset" class="btn btn-secondary btn-sm ml-1">reset</button>
+                
+                </form>
             </div>
-        </span>
-        <!-- small viewport -->
-        <span id="xsVP" class="d-sm-none">
-            <div class="row">
-                <div class="col text-center">
-                    <span class='logo-text' >
-                        <span>test</span>
-                        <i class="fa fa-arrow-right fa-sm"></i>
-                        <strong class="underclass">rate</strong>
-                    </span>
-                </div> 
-            </div>
-            <div class="row" style="height:125px">
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <h2>what can we help you find? small</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 d-flex text-left">
-                    <form class="form-inline">
-                        <div class="input-group">
-                            <div class="btn-group mr-0">
-                                <button type="button" class="btn btn-secondary btn-lg" id="locBtn2">location</button>
-                                <button type="button" class="btn btn-outline-secondary btn-lg dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-                                    <span class="sr-only">Toggle Location Dropdown</span>
-                                </button>
-                                <div class="dropdown-menu" id="locOptBtn2">
-                                    <a class="dropdown-item" href="#">city, state</a>
-                                    <a class="dropdown-item" href="#">zip code</a>
-                                </div>
-                            </div>
-                            <input class="search-click-small" type="text" placeholder="ex. Denver, CO, 80210" id="locSearchBtn2">
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 d-flex text-left">
-                    <form class="form-inline">
-                        <div class="input-group">
-                            <div class="btn-group mr-0">
-                                <button type="button" class="btn btn-secondary btn-lg" id="catBtn2">category</button>
-                                <button type="button" class="btn btn-outline-secondary btn-lg dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-                                    <span class="sr-only">Toggle Category Dropdown</span>
-                                </button>
-                                <div class="dropdown-menu" id="optBtn2">
-                                    <a class="dropdown-item" href="#">restaurants</a>
-                                    <a class="dropdown-item" href="#">retailers</a>
-                                    <a class="dropdown-item" href="#">services</a>
-                                <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">i'm not sure</a>
-                                </div>
-                            </div>
-                            <input class="search-click-small" type="text" placeholder="ex. Italian, Plumber, Macy's" id="searchBtn2">
-                        </div>
-                        <button class="btn btn-outline-primary btn-lg my-2 my-sm-0 align-items-center mx-auto" type="submit" id="submitBtn">
-                            <i class="fa fa-search fa-flip-horizontal"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </span>
+        </div>
     </div>
 
     
